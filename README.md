@@ -1,6 +1,6 @@
 # spacy-iwnlp
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/Liebeck/spacy-iwnlp/master/LICENSE.md)
-[![Build Status](https://api.travis-ci.org/Liebeck/spacy-iwnlp.svg?branch=master)](https://travis-ci.com/Liebeck/spacy-iwnlp)
+[![Build Status](https://api.travis-ci.org/Liebeck/spacy-iwnlp.svg?branch=master)](https://travis-ci.org/Liebeck/spacy-iwnlp)
 
 This package uses the [spaCy 2.0 extensions](https://spacy.io/usage/processing-pipelines#extensions)
 to add [IWNLP](https://github.com/Liebeck/iwnlp-py) as German lemmatizer directly into your spaCy pipeline.
