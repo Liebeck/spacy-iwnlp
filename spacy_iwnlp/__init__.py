@@ -1,6 +1,7 @@
 from spacy.tokens import Token
 from iwnlp.iwnlp_wrapper import IWNLPWrapper
 
+
 class spaCyIWNLP(object):
     def __init__(self, lemmatizer_path, use_plain_lemmatization=False, ignore_case=False):
         self.lemmatizer = IWNLPWrapper(lemmatizer_path=lemmatizer_path)
