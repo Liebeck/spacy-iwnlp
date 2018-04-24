@@ -10,7 +10,7 @@ Please report bugs with spacy-iwnlp as issue in [IWNLP-py](https://github.com/Li
 ## Usage
 ``` python
 import spacy
-import space-iwnlp
+from spacy_iwnlp import spaCyIWNLP
 nlp = spacy.load('de')
 iwnlp = spaCyIWNLP(lemmatizer_path='data/IWNLP.Lemmatizer_20170501.json')
 nlp.add_pipe(iwnlp)
