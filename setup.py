@@ -11,4 +11,6 @@ setup(
     url='https://github.com/Liebeck/spacy-iwnlp',
     download_url='https://github.com/Liebeck/spacy-iwnlp/archive/0.0.1.tar.gz',
     keywords=['IWNLP', 'NLP', 'German', 'lemmatization', 'Wiktionary', 'spaCy'],
+    install_requires=['spacy>=2.0.0,<3.0.0',
+                      'iwnlp>=0.1.7']
 )
