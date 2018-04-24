@@ -7,8 +7,7 @@ class spaCyIWNLP(object):
         self.lemmatizer = IWNLPWrapper(lemmatizer_path=lemmatizer_path)
         self.use_plain_lemmatization = use_plain_lemmatization
         self.ignore_case = ignore_case
-        Token.set_extension('iwnlp_lemmas', default=None)
-        Token.set_extension('iwnlp_lemmas', getter=self.get_lemmas)
+        Token.set_extension('iwnlp_lemmas', getter=self.get_lemmas, force=True)
 
     def __call__(self, doc):
         for token in doc:
