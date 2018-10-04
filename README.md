@@ -12,7 +12,7 @@ Please report bugs with spacy-iwnlp as issue in [IWNLP-py](https://github.com/Li
 import spacy
 from spacy_iwnlp import spaCyIWNLP
 nlp = spacy.load('de')
-iwnlp = spaCyIWNLP(lemmatizer_path='data/IWNLP.Lemmatizer_20170501.json')
+iwnlp = spaCyIWNLP(lemmatizer_path='data/IWNLP.Lemmatizer_20181001.json')
 nlp.add_pipe(iwnlp)
 doc = nlp('Wir mögen Fußballspiele mit ausgedehnten Verlängerungen.')
 for token in doc:
@@ -24,7 +24,7 @@ for token in doc:
 ``` bash
 pip install spacy-iwnlp
 ```
-2. Download the latest processed IWNLP dump from http://lager.cs.uni-duesseldorf.de/NLP/IWNLP/IWNLP.Lemmatizer_20170501.zip and unzip it.
+2. Download the latest processed IWNLP dump from http://lager.cs.uni-duesseldorf.de/NLP/IWNLP/IWNLP.Lemmatizer_20181001.zip and unzip it.
 
 ## Citation
 Please include the following BibTeX if you use IWNLP in your work:
