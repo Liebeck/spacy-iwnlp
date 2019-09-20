@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='spacy_iwnlp',
     packages=find_packages(),
-    version='0.0.2',
+    version='0.0.3',
     description='Integration of IWNLP-py as spaCy extension',
     author='Matthias Liebeck',
     author_email='liebeck@cs.uni-duesseldorf.de',
