@@ -1,13 +1,14 @@
 from spacy.tokens import Token
 from iwnlp.iwnlp_wrapper import IWNLPWrapper
 
+__version__ = "0.0.3"
 
 class spaCyIWNLP(object):
     def __init__(self, lemmatizer_path, use_plain_lemmatization=False, ignore_case=False):
         self.lemmatizer = IWNLPWrapper(lemmatizer_path=lemmatizer_path)
         self.use_plain_lemmatization = use_plain_lemmatization
         self.ignore_case = ignore_case
-        Token.set_extension('iwnlp_lemmas', getter=self.get_lemmas, force=True)
+        Token.set_extension('iwnlp_lemmas', force=True, default=None)
 
     def __call__(self, doc):
         for token in doc:
