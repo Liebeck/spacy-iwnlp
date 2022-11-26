@@ -1,2 +1,2 @@
-iwnlp>=1.0.7
-spacy>=2.0.0
+iwnlp>=0.1.7
+spacy>=3.0.0

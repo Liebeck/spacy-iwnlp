@@ -2,7 +2,7 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/Liebeck/spacy-iwnlp/master/LICENSE.md)
 [![Build Status](https://api.travis-ci.org/Liebeck/spacy-iwnlp.svg?branch=master)](https://travis-ci.org/Liebeck/spacy-iwnlp)
 
-This package uses the [spaCy 2.0 extensions](https://spacy.io/usage/processing-pipelines#extensions) to add [IWNLP-py](https://github.com/Liebeck/iwnlp-py) as German lemmatizer directly into your spaCy pipeline.
+This package uses the [spaCy 3.0 extensions](https://spacy.io/usage/processing-pipelines#extensions) to add [IWNLP-py](https://github.com/Liebeck/iwnlp-py) as German lemmatizer directly into your spaCy pipeline.
 
 Please report bugs with spacy-iwnlp as issue in [IWNLP-py](https://github.com/Liebeck/iwnlp-py).
 
@@ -11,9 +11,8 @@ Please report bugs with spacy-iwnlp as issue in [IWNLP-py](https://github.com/Li
 ``` python
 import spacy
 from spacy_iwnlp import spaCyIWNLP
-nlp = spacy.load('de')
-iwnlp = spaCyIWNLP(lemmatizer_path='data/IWNLP.Lemmatizer_20181001.json')
-nlp.add_pipe(iwnlp)
+nlp = spacy.load('de_core_news_sm')
+nlp.add_pipe('iwnlp', config={'lemmatizer_path': 'data/IWNLP.Lemmatizer_20181001.json'})
 doc = nlp('Wir mögen Fußballspiele mit ausgedehnten Verlängerungen.')
 for token in doc:
     print('POS: {}\tIWNLP:{}'.format(token.pos_, token._.iwnlp_lemmas))

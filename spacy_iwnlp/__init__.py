@@ -1,7 +1,13 @@
 from spacy.tokens import Token
 from iwnlp.iwnlp_wrapper import IWNLPWrapper
+from spacy.language import Language
 
-__version__ = "0.0.3"
+
+__version__ = "3.0.0"
+
+@Language.factory("iwnlp")
+def create_component(nlp: Language, name, lemmatizer_path):
+    return spaCyIWNLP(lemmatizer_path=lemmatizer_path)
 
 class spaCyIWNLP(object):
     def __init__(self, lemmatizer_path, use_plain_lemmatization=False, ignore_case=False):
