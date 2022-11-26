@@ -25,6 +25,17 @@ pip install spacy-iwnlp
 ```
 2. Download the latest processed IWNLP dump from http://lager.cs.uni-duesseldorf.de/NLP/IWNLP/IWNLP.Lemmatizer_20181001.zip and unzip it.
 
+## Local development
+Use develop.py to extend the functionality
+
+
+Update PIP package
+
+```
+python setup.py sdist bdist_wheel 
+python -m twine upload dist/PACKAGENAME-VERSION.tar.gz
+```
+
 ## Citation
 Please include the following BibTeX if you use IWNLP in your work:
 ``` bash
