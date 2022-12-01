@@ -1,0 +1,9 @@
+@InProceedings{liebeck-conrad:2015:ACL-IJCNLP,
+  author    = {Liebeck, Matthias  and  Conrad, Stefan},
+  title     = {{IWNLP: Inverse Wiktionary for Natural Language Processing}},
+  booktitle = {Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)},
+  year      = {2015},
+  publisher = {Association for Computational Linguistics},
+  pages     = {414--418},
+  url       = {http://www.aclweb.org/anthology/P15-2068}
+}
