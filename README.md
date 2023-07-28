@@ -23,7 +23,7 @@ for token in doc:
 ``` bash
 pip install spacy-iwnlp
 ```
-2. Download the latest processed IWNLP dump from http://lager.cs.uni-duesseldorf.de/NLP/IWNLP/IWNLP.Lemmatizer_20181001.zip and unzip it.
+2. Download the latest processed IWNLP dump from https://dbs.cs.uni-duesseldorf.de/datasets/iwnlp/IWNLP.Lemmatizer_20181001.zip and unzip it.
 
 ## Local development
 Use develop.py to extend the functionality
